@@ -9,7 +9,17 @@ const App = () =>{
   return(
     <div>
       <p>Cada segundo que pasa mi amor por tí va creciendo</p>
-      <p>❤</p>
+      <p>"      "❤❤"                "❤❤       </p>
+      <p>     ❤     ❤             ❤     ❤       </p>
+      <p>   ❤         ❤          ❤        ❤       </p>
+      <p>   ❤            ❤     ❤          ❤       </p>
+      <p>    ❤              ❤            ❤       </p>
+      <p>      ❤                        ❤       </p>
+      <p>        ❤                    ❤       </p>
+      <p>           ❤               ❤       </p>
+      <p>              ❤         ❤       </p>
+      <p>                ❤    ❤       </p>
+      <p>                   ❤</p>
       <p>👇</p>
       {counter}
       </div>
