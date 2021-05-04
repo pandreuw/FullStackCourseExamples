@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 
-const Display = (props) => {
-  return (
-    <div>{props.counter}</div>
-  )
-}
+const Display = ({ counter }) => <div>{counter}</div>
 
-const Button = (props) => {
+const Button = ({ handleClick, text }) => {
   return (
-    <button onClick={props.handleClick}>
-      {props.text}
+    <button onClick={handleClick}>
+      {text}
     </button>
   )
 }
@@ -20,23 +16,24 @@ const App = () => {
   const increaseByOne = () => setCounter(counter + 1)
   const decreaseByOne = () => setCounter(counter - 1)
   const setToZero = () => setCounter(0)
-  
+
 
   return (
     <div>
-      <Display counter={counter}/>
+      <Display counter={counter} />
       <Button
-        handleClick={increaseByOne}
-        text='plus'
+        handleClick={decreaseByOne}
+        text='minus'
+
       />
       <Button
         handleClick={setToZero}
         text='zero'
-      />     
+      />
       <Button
-        handleClick={decreaseByOne}
-        text='minus'
-      /> 
+        handleClick={increaseByOne}
+        text='plus'
+      />
     </div>
   )
 }
